@@ -76,6 +76,6 @@ npx playwright test --headed
 
 QA with hands-on experience in manual testing, transitioning into automation using Playwright.
 
-![Cart Flow](./screenshots/cart-flow1.png.jpeg)
-![Cart Flow](./screenshots/cart-flow2.png.jpeg)
-![Cart Flow](./screenshots/test-report.png.jpeg)
+![Cart Flow](./screenshots/cart-flow1.jpeg)
+![Cart Flow](./screenshots/cart-flow2.jpeg)
+![Cart Flow](./screenshots/test-report.jpeg)
