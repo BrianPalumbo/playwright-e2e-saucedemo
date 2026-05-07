@@ -1,0 +1,12 @@
+{
+  "name": "playwright-e2e-saucedemo",
+  "version": "1.0.0",
+  "description": "E2E tests with Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0"
+  }
+}
