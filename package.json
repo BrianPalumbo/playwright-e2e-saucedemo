@@ -4,9 +4,17 @@
   "description": "E2E tests with Playwright",
   "scripts": {
     "test": "playwright test",
-    "test:headed": "playwright test --headed"
+    "test:headed": "playwright test --headed",
+    "dashboard:server": "node dashboard-server.js",
+    "dashboard:ui": "cd dashboard-ui && npm start",
+    "dashboard": "concurrently \"npm run dashboard:server\" \"npm run dashboard:ui\""
   },
   "devDependencies": {
-    "@playwright/test": "^1.42.0"
+    "@playwright/test": "^1.42.0",
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
   }
 }

@@ -9,4 +9,6 @@ export default defineConfig({
     slowMo: 1000,// Slow down actions by 100ms to see them more clearly
   },
 },  
+
+reporter: 'html',
 });

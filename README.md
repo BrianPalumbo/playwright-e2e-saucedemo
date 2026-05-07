@@ -1,6 +1,6 @@
 # 🧪 Playwright E2E Tests – SauceDemo
 
-Automated end-to-end tests built with Playwright using the Page Object Model (POM) pattern.
+E2E automation framework built with Playwright and TypeScript using Page Object Model (POM).
 
 ## 🚀 Tech Stack
 
@@ -11,18 +11,21 @@ Automated end-to-end tests built with Playwright using the Page Object Model (PO
 
 This project automates a basic e-commerce flow on SauceDemo:
 
-1. User login
-2. Product listing validation
-3. Product selection
-4. Product detail validation
+- Login validation
+- Negative login scenarios
+- Product navigation
+- Cart functionality
+- Dynamic validations
+- Reusable Page Objects
 
 The goal is to demonstrate clean test structure, reusable components, and reliable assertions.
 
 ## 🧱 Project Structure
 
-* `tests/` → Test cases
-* `pages/` → Page Object Model classes
-* `playwright.config.ts` → Configuration
+/pages -> page objects
+/helpers -> reusable helpers
+/fixtures -> test data
+/tests -> E2E test suites
 
 ## 🧪 Test Scenarios
 
@@ -72,3 +75,5 @@ npx playwright test --headed
 ## 👤 Author
 
 QA with hands-on experience in manual testing, transitioning into automation using Playwright.
+
+![Cart Flow](./screenshots/cart-flow.png)
