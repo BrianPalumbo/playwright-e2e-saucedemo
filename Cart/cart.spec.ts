@@ -13,7 +13,6 @@ test('Should add item and remove it from cart', async ({ page }) => {
     // Add first item to cart
     await inventory.addItemToCartByIndex(0);
 
-    await page.pause();
 
     // Add second item to cart
     await inventory.addItemToCartByIndex(1);
@@ -21,17 +20,14 @@ test('Should add item and remove it from cart', async ({ page }) => {
     // Verify cart badge shows 2 items
     await expect(inventory.getCartBadge()).toHaveText('2');
     
-    await page.pause();
 
     // Remove first item from cart
     await inventory.removeItemFromCartByIndex(0)
 
-    await page.pause();
 
     // Remove second item from cart
     await inventory.removeItemFromCartByIndex(1)
 
-    await page.pause();
 
     // Verify cart badge is no longer visible
     await expect(inventory.getCartBadge()).toHaveCount(0);
